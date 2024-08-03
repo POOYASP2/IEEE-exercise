@@ -13,55 +13,33 @@
     T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
 \begin{document}
 
-\title{Conference Paper Title*\\
-{\footnotesize \textsuperscript{*}Note: Sub-titles are not captured for https://ieeexplore.ieee.org  and
-should not be used}
-\thanks{Identify applicable funding agency here. If none, delete this.}
+\title{A practice for How to LaTeX works 
 }
 
-\author{\IEEEauthorblockN{1\textsuperscript{st} Given Name Surname}
+\author{\IEEEauthorblockN{1\textsuperscript{st} Pooya Sharifi}
+\IEEEauthorblockA{\textit{dept. random address (of Aff.)} \\
+\textit{name of organization (of Aff.)}\\
+City, Country \\
+pooyasharifi.sp2@gmail.com}
+\and
+\IEEEauthorblockN{2\textsuperscript{nd} Pooya Sharifi}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
 \and
-\IEEEauthorblockN{2\textsuperscript{nd} Given Name Surname}
+\IEEEauthorblockN{3\textsuperscript{rd} A random name}
 \IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
 \textit{name of organization (of Aff.)}\\
 City, Country \\
 email address or ORCID}
-\and
-\IEEEauthorblockN{3\textsuperscript{rd} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{4\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{5\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
-\and
-\IEEEauthorblockN{6\textsuperscript{th} Given Name Surname}
-\IEEEauthorblockA{\textit{dept. name of organization (of Aff.)} \\
-\textit{name of organization (of Aff.)}\\
-City, Country \\
-email address or ORCID}
+
 }
 
 \maketitle
 
 \begin{abstract}
-This document is a model and instructions for \LaTeX.
-This and the IEEEtran.cls file define the components of your paper [title, text, heads, etc.]. *CRITICAL: Do Not Use Symbols, Special Characters, Footnotes, 
-or Math in Paper Title or Abstract.
+    Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
 \end{abstract}
 
 \begin{IEEEkeywords}
@@ -70,7 +48,7 @@ component, formatting, style, styling, insert.
 
 \section{Introduction}
 This document is a model and instructions for \LaTeX.
-Please observe the conference page limits. For more information about how to become an IEEE Conference author or how to write your paper, please visit   IEEE Conference Author Center website: https://conferences.ieeeauthorcenter.ieee.org/.
+Please observe the conference page limits. For more information about how to become an IEEE Conference author or how to write your paper, please visit the IEEE Conference Author Center website: https://conferences.ieeeauthorcenter.ieee.org/.
 
 \subsection{Maintaining the Integrity of the Specifications}
 
@@ -81,6 +59,23 @@ measures proportionately more than is customary. This measurement
 and others are deliberate, using specifications that anticipate your paper 
 as one part of the entire proceedings, and not as an independent document. 
 Please do not revise any of the current designations.
+
+\begin{table}[htbp]
+    \caption{Random Data Table}
+    \begin{center}
+    \begin{tabular}{|c|c|c|}
+    \hline
+    \textbf{Parameter} & \textbf{Value 1} & \textbf{Value 2} \\
+    \hline
+    A & 1.23 & 4.56 \\
+    B & 7.89 & 0.12 \\
+    C & 3.45 & 6.78 \\
+    D & 9.01 & 2.34 \\
+    \hline
+    \end{tabular}
+    \label{tab2}
+    \end{center}
+    \end{table}
 
 \section{Prepare Your Paper Before Styling}
 Before you begin to format your paper, first write and save the content as a 
@@ -103,8 +98,14 @@ abbreviations in the title or heads unless they are unavoidable.
 \item Use either SI (MKS) or CGS as primary units. (SI units are encouraged.) English units may be used as secondary units (in parentheses). An exception would be the use of English units as identifiers in trade, such as ``3.5-inch disk drive''.
 \item Avoid combining SI and CGS units, such as current in amperes and magnetic field in oersteds. This often leads to confusion because equations do not balance dimensionally. If you must use mixed units, clearly state the units for each quantity that you use in an equation.
 \item Do not mix complete spellings and abbreviations of units: ``Wb/m\textsuperscript{2}'' or ``webers per square meter'', not ``webers/m\textsuperscript{2}''. Spell out units when they appear in text: ``. . . a few henries'', not ``. . . a few H''.
-\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.)
+\item Use a zero before decimal points: ``0.25'', not ``.25''. Use ``cm\textsuperscript{3}'', not ``cc''.
 \end{itemize}
+
+\begin{figure}[htbp]
+    \centerline{\includegraphics[width=0.5\linewidth]{fig1.png}}
+    \caption{some caption is here}
+    \label{fig1}
+    \end{figure}
 
 \subsection{Equations}
 Number equations consecutively. To make your 
@@ -114,7 +115,22 @@ but not Greek symbols. Use a long dash rather than a hyphen for a minus
 sign. Punctuate equations with commas or periods when they are part of a 
 sentence, as in:
 \begin{equation}
-a+b=\gamma\label{eq}
+a + b = \gamma \label{eq}
+\end{equation}
+
+Another example of an equation is:
+\begin{equation}
+E = mc^2
+\end{equation}
+
+Here is a summation formula:
+\begin{equation}
+\sum_{n=1}^{\infty} \frac{1}{n^2} = \frac{\pi^2}{6}
+\end{equation}
+
+And an integral:
+\begin{equation}
+\int_{0}^{1} x^2 \, dx = \frac{1}{3}
 \end{equation}
 
 Be sure that the 
@@ -124,7 +140,7 @@ the beginning of a sentence: ``Equation \eqref{eq} is . . .''
 
 \subsection{\LaTeX-Specific Advice}
 
-Please use ``soft'' (e.g., \verb|\eqref{Eq}|) cross references instead
+Please use ``soft'' (e.g., \verb|\eqref{eq}|) cross references instead
 of ``hard'' references (e.g., \verb|(1)|). That will make it possible
 to combine sections, add equations, or change the order of figures or
 citations without having to go through the file line by line.
@@ -209,7 +225,7 @@ bottom of columns. Avoid placing them in the middle of columns. Large
 figures and tables may span across both columns. Figure captions should be 
 below the figures; table heads should appear above the tables. Insert 
 figures and tables after they are cited in the text. Use the abbreviation 
-``Fig.~\ref{fig}'', even at the beginning of a sentence.
+``Fig.~\ref{fig1}'', even at the beginning of a sentence.
 
 \begin{table}[htbp]
 \caption{Table Type Styles}
@@ -228,10 +244,34 @@ copy& More table copy$^{\mathrm{a}}$& &  \\
 \end{center}
 \end{table}
 
+
+
+\begin{table}[htbp]
+\caption{Another Random Data Table}
+\begin{center}
+\begin{tabular}{|c|c|c|c|}
+\hline
+\textbf{Category} & \textbf{Q1} & \textbf{Q2} & \textbf{Q3} \\
+\hline
+X & 10 & 20 & 30 \\
+Y & 40 & 50 & 60 \\
+Z & 70 & 80 & 90 \\
+\hline
+\end{tabular}
+\label{tab3}
+\end{center}
+\end{table}
+
 \begin{figure}[htbp]
-\centerline{\includegraphics{fig1.png}}
-\caption{Example of a figure caption.}
-\label{fig}
+\centerline{\includegraphics[width=0.5\linewidth]{fig2.png}}
+\caption{caption2 ok.}
+\label{fig2}
+\end{figure}
+
+\begin{figure}[htbp]
+\centerline{\includegraphics[width=0.5\linewidth]{fig3.png}}
+\caption{caption for figure 3}
+\label{fig3}
 \end{figure}
 
 Figure Labels: Use 8 point Times New Roman for Figure labels. Use words 
@@ -276,14 +316,7 @@ citation first, followed by the original foreign-language citation \cite{b6}.
 \bibitem{b1} G. Eason, B. Noble, and I. N. Sneddon, ``On certain integrals of Lipschitz-Hankel type involving products of Bessel functions,'' Phil. Trans. Roy. Soc. London, vol. A247, pp. 529--551, April 1955.
 \bibitem{b2} J. Clerk Maxwell, A Treatise on Electricity and Magnetism, 3rd ed., vol. 2. Oxford: Clarendon, 1892, pp.68--73.
 \bibitem{b3} I. S. Jacobs and C. P. Bean, ``Fine particles, thin films and exchange anisotropy,'' in Magnetism, vol. III, G. T. Rado and H. Suhl, Eds. New York: Academic, 1963, pp. 271--350.
-\bibitem{b4} K. Elissa, ``Title of paper if known,'' unpublished.
-\bibitem{b5} R. Nicole, ``Title of paper with only first word capitalized,'' J. Name Stand. Abbrev., in press.
-\bibitem{b6} Y. Yorozu, M. Hirano, K. Oka, and Y. Tagawa, ``Electron spectroscopy studies on magneto-optical media and plastic substrate interface,'' IEEE Transl. J. Magn. Japan, vol. 2, pp. 740--741, August 1987 [Digests 9th Annual Conf. Magnetics Japan, p. 301, 1982].
-\bibitem{b7} M. Young, The Technical Writer's Handbook. Mill Valley, CA: University Science, 1989.
-\bibitem{b8} D. P. Kingma and M. Welling, ``Auto-encoding variational Bayes,'' 2013, arXiv:1312.6114. [Online]. Available: https://arxiv.org/abs/1312.6114
-\bibitem{b9} S. Liu, ``Wi-Fi Energy Detection Testbed (12MTC),'' 2023, gitHub repository. [Online]. Available: https://github.com/liustone99/Wi-Fi-Energy-Detection-Testbed-12MTC
-\bibitem{b10} ``Treatment episode data set: discharges (TEDS-D): concatenated, 2006 to 2009.'' U.S. Department of Health and Human Services, Substance Abuse and Mental Health Services Administration, Office of Applied Studies, August, 2013, DOI:10.3886/ICPSR30122.v2
-\bibitem{b11} K. Eves and J. Valasek, ``Adaptive control for singularly perturbed systems examples,'' Code Ocean, Aug. 2023. [Online]. Available: https://codeocean.com/capsule/4989235/tree
+
 \end{thebibliography}
 
 \vspace{12pt}
