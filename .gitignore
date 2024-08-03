@@ -1,0 +1,69 @@
+# LaTeX intermediate and output files
+*.aux
+*.bbl
+*.blg
+*.brf
+*.fls
+*.fdb_latexmk
+*.glg
+*.glo
+*.gls
+*.idx
+*.ilg
+*.ind
+*.lof
+*.log
+*.lot
+*.out
+*.toc
+*.acn
+*.acr
+*.alg
+*.dvi
+*.glsdefs
+*.ist
+*.maf
+*.mtc
+*.mtc0
+*.nav
+*.pre
+*.snm
+*.synctex
+*.synctex.gz
+*.tdo
+*.vrb
+*.xdy
+
+# PDF files
+*.pdf
+
+# Build directories
+_build/
+build/
+latex.out/
+latex.out/*
+
+# User-specific files
+*~
+.*.swp
+.*.swo
+*.bak
+*.backup
+*.tmp
+*.temp
+*.DS_Store
+Thumbs.db
+
+# VSCode specific files
+.vscode/
+*.code-workspace
+
+# Auxiliary files created by editors and OS
+*~
+*.swp
+*.swo
+*.log
+*.bak
+*.backup
+*.tmp
+*.temp
